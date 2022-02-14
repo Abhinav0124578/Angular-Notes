@@ -1,0 +1,17 @@
+1)Bootstrapping is a technique of initializing or loading our Angular application. 
+
+Boot process- 
+	ng serve 
+		main.ts				(Note: if we change module name in main.ts then we need to change in test.ts also)
+			
+			-> bootstrapModule
+				AppModule
+			->	
+			
+		index.html -> the o/p of this directive dynamically generated inside this <approot>
+			->AppModule
+				module.ts->  bootstrap: [AppComponent]
+				app.component.ts-> selector["approot"]
+			<approot></approot>
+			
+		

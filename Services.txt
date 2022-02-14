@@ -1,0 +1,34 @@
+a) Dependency Injection- is ability to add the functionality of components at runtime.
+
+b) Services- 1)allow us to create reusable common shared functionality between various modules and components.
+	  2)Services are Singleton
+	  3)services are injected into appn. using dependency injection mechanism.
+	  4)we need to create and inject services in components where we want to use them.
+	  5)services are commonly used for making http request to backend api or endpoint.
+
+c) Generate service- 
+	1)ng generate service <service_name> or ng g service <service_name>
+	2)import {Injectable} from '@angular/core';
+
+d)where should we keep services- 
+inside src/app -> create folder services
+
+e)whats inside service.ts file?
+-> @Injectable
+	->works on dependency injection mechanishm
+->ProvidedIn
+	->its available wherever we inject it
+
+f) Do we need to import in any module file?
+-> NO
+-> Only import in the components where we want to use.
+
+g)Import the service in any component
+   ->create instance in constructor
+   ->call the method using instance of the service
+
+
+
+Note- Important Error Solution -> Error Name = Argument of type 'undefined' is not assignable to parameter of type 'string'.ts(2345)
+	Avoiding null and undefined error for type string error:2345:
+	Solution : 1)Go to tsConfig.json->strict=false 

@@ -1,0 +1,13 @@
+1)HTTPClient - A) is used for communicating between frontend app & backend apis/RESTapi
+	       B) HTTPClient module in our AppModule.
+	       C) We need to inject HTTPClient in component/services & create instance
+
+D) Mostly used in CRUD Operation
+->post() ->create and send data
+->get()  -> read data
+->put()  -> update data
+->delete() ->delete data
+
+e)HTTP Client helps in creating interceptors for API request.
+
+f)HTTPClient is used for common error handling.

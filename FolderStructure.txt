@@ -1,0 +1,43 @@
+Basic Folder Structure Information-
+1)e2e - protractor Framework
+`	-bydefault
+	-end to end test script
+
+	protractor.config.js- config settings for running end to end test script.
+	tsConfig.json- basic typescript setting
+
+2) src- entire source code of appn
+	app.component.html-> view/ui/htmlcode
+	app.component.scss->  stylesheet
+	app.component.spec.ts-> unit test script
+	app.component.ts-> class file
+3) assets-
+	img
+	mockdata
+	apis 
+
+4)environment-
+	local
+	dev
+	qa 
+
+5)index.html : Angular is a single page appn
+	index.html->   <app-root></app-root>  => All the appn will be dynamically generated and inserted inside this app root. dynamically code is generated at runtime.
+
+6)main.ts : bootstrap-> AppModule
+	starting point of appn.
+
+7)polyfills-  support older version of browsers
+
+8)styles.scss - global stylesheet
+
+9)test.ts -> test script for the main.ts file
+
+10)angular.json - > backbone of appn. All settings are defined inside this.
+		-> scripts, test, serve defined here
+
+11)karma.config.js-  unit test script runner or executor
+
+12)tsconfig - build o/p directory
+
+13)tslint-enforce coding standards
